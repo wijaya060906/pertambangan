@@ -163,18 +163,23 @@ section {
 
 .row-img {
   overflow: hidden;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
-  border-radius: 50%;
+  border-radius: 10px; /* Changed from 50% to 10px */
   cursor: pointer;
+  transition: transform 0.7s, border-radius 0.7s; /* Added transition for border-radius */
 }
 
 .row-img img {
   width: 100%;
   display: block;
   transition: transform 0.7s;
+}
+
+.row-img:hover {
+  border-radius: 20px; /* Added hover effect for border-radius */
 }
 
 .row-img img:hover {
